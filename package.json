@@ -1,6 +1,6 @@
 {
-  "name": "watermelon-king",
-  "module": "index.ts",
+  "name": "htmx-todo",
+  "module": "index.tsx",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",

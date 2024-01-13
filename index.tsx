@@ -8,7 +8,7 @@ const app = new Elysia()
         html(
             <BaseHtml>
             <body
-            class="grid grid-cols-3"
+            class="bg-green-500"
             hx-get="/todos"
             hx-trigger="load"
             hx-swap="innerHTML"
@@ -45,6 +45,7 @@ const db: Todo[] = [
     {id: 1, content: "cool task", completed: true}
 ];
 function TodoItem({ id,content, completed}:Todo) {
+
     return(
         <div>
             <p>{content}</p>
@@ -54,6 +55,7 @@ function TodoItem({ id,content, completed}:Todo) {
     );
 }
 function TodoList({ todos }: {todos: Todo[]}) {
+
     return(
         <div>
         {todos.map((todo) => (
